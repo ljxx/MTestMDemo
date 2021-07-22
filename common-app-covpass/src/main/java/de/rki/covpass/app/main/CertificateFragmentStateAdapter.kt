@@ -30,7 +30,6 @@ internal class CertificateFragmentStateAdapter(parent: Fragment) : BaseFragmentS
         fragments = certificateList.getSortedCertificates().map {
             CertificateFragmentNav(it.id).build() as CertificateFragment
         }
-        // TODO: Optimize this to only update what has really changed
         notifyDataSetChanged()
     }
 

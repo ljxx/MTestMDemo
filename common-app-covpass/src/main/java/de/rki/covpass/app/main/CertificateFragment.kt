@@ -56,7 +56,6 @@ internal class CertificateFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         autoRun {
-            // TODO: Optimize this, so we only update if our cert has changed and not something else
             updateViews(get(covpassDeps.certRepository.certs))
         }
     }
