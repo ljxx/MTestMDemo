@@ -12,6 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/common-app" />
+            <option value="$PROJECT_DIR$/common-app-covpass" />
+            <option value="$PROJECT_DIR$/covpass-sdk" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
