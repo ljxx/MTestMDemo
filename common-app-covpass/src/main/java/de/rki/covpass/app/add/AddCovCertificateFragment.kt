@@ -9,10 +9,10 @@ import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.view.View
 import de.rki.covpass.app.R
+import de.rki.covpass.app.commonapp.BaseBottomSheet
+import de.rki.covpass.app.commonapp.utils.stripUnderlines
 import de.rki.covpass.app.databinding.AddCovCertPopupContentBinding
 import de.rki.covpass.app.scanner.CovPassQRScannerFragmentNav
-import de.rki.covpass.commonapp.BaseBottomSheet
-import de.rki.covpass.commonapp.utils.stripUnderlines
 import de.rki.covpass.sdk.navigation.FragmentNav
 import de.rki.covpass.sdk.navigation.findNavigator
 import de.rki.covpass.sdk.utilslib.getSpanned

@@ -5,11 +5,11 @@
 
 package de.rki.covpass.app.onboarding
 
-import de.rki.covpass.commonapp.dependencies.commonDeps
-import de.rki.covpass.commonapp.onboarding.BaseOnboardingContainerFragment
-import de.rki.covpass.commonapp.utils.SimpleFragmentStateAdapter
+import de.rki.covpass.app.commonapp.dependencies.commonDeps
+import de.rki.covpass.app.commonapp.onboarding.BaseOnboardingContainerFragment
+import de.rki.covpass.app.commonapp.storage.OnboardingRepository.Companion.CURRENT_DATA_PRIVACY_VERSION
+import de.rki.covpass.app.commonapp.utils.SimpleFragmentStateAdapter
 import de.rki.covpass.app.main.MainFragmentNav
-import de.rki.covpass.commonapp.storage.OnboardingRepository.Companion.CURRENT_DATA_PRIVACY_VERSION
 import de.rki.covpass.sdk.navigation.FragmentNav
 import de.rki.covpass.sdk.navigation.findNavigator
 import kotlinx.parcelize.Parcelize

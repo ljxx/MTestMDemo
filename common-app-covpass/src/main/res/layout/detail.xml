@@ -13,7 +13,7 @@
   android:orientation="vertical"
   tools:ignore="Overdraw">
 
-  <de.rki.covpass.commonapp.uielements.CenteredTitleToolbar
+  <de.rki.covpass.app.commonapp.uielements.CenteredTitleToolbar
     android:id="@+id/detail_toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

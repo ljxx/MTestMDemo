@@ -2,9 +2,7 @@ rootProject.name = "MTestMDemo"
 
 include ':app'
 include ':covpass-sdk'
-include ':common-app'
 include ':common-app-covpass'
-
 
 apply from: "$rootDir/gradle/common/settings.gradle"
 def localSettings = "$rootDir/settings-local.gradle"

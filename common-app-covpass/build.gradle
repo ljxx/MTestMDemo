@@ -4,7 +4,8 @@
  */
 
 dependencies {
-    api project(":common-app")
+    api project(':covpass-sdk')
+    zxing()
 }
 
 apply from: "$rootDir/gradle/common/twine.gradle"

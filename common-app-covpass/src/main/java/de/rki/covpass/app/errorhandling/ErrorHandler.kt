@@ -6,10 +6,10 @@
 package de.rki.covpass.app.errorhandling
 
 import de.rki.covpass.app.R
+import de.rki.covpass.app.commonapp.dialog.DialogModel
+import de.rki.covpass.app.commonapp.errorhandling.CommonErrorHandler
 import de.rki.covpass.sdk.cert.models.CertAlreadyExistsException
 import de.rki.covpass.sdk.cert.models.CertTestPositiveException
-import de.rki.covpass.commonapp.dialog.DialogModel
-import de.rki.covpass.commonapp.errorhandling.CommonErrorHandler
 import de.rki.covpass.sdk.cert.BadCoseSignatureException
 import de.rki.covpass.sdk.cert.NoMatchingExtendedKeyUsageException
 

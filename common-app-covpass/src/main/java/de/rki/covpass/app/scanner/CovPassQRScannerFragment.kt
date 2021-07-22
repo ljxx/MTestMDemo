@@ -7,10 +7,10 @@ package de.rki.covpass.app.scanner
 
 import com.ensody.reactivestate.android.reactiveState
 import com.journeyapps.barcodescanner.BarcodeResult
+import de.rki.covpass.app.commonapp.dialog.DialogAction
+import de.rki.covpass.app.commonapp.dialog.DialogListener
+import de.rki.covpass.app.commonapp.scanner.QRScannerFragment
 import de.rki.covpass.app.detail.DetailFragmentNav
-import de.rki.covpass.commonapp.dialog.DialogAction
-import de.rki.covpass.commonapp.dialog.DialogListener
-import de.rki.covpass.commonapp.scanner.QRScannerFragment
 import de.rki.covpass.sdk.cert.models.GroupedCertificatesId
 import de.rki.covpass.sdk.navigation.FragmentNav
 import de.rki.covpass.sdk.navigation.findNavigator

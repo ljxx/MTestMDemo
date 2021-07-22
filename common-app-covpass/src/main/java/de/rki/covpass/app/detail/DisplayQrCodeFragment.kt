@@ -18,10 +18,10 @@ import com.google.zxing.BarcodeFormat
 import com.google.zxing.EncodeHintType
 import com.journeyapps.barcodescanner.BarcodeEncoder
 import de.rki.covpass.app.R
+import de.rki.covpass.app.commonapp.BaseBottomSheet
 import de.rki.covpass.app.databinding.DisplayQrCodeBottomsheetContentBinding
 import de.rki.covpass.app.dependencies.covpassDeps
 import de.rki.covpass.sdk.cert.models.GroupedCertificatesList
-import de.rki.covpass.commonapp.BaseBottomSheet
 import de.rki.covpass.sdk.cert.models.CovCertificate
 import de.rki.covpass.sdk.navigation.FragmentNav
 import de.rki.covpass.sdk.navigation.getArgs

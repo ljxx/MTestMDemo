@@ -16,13 +16,13 @@ import com.ensody.reactivestate.android.autoRun
 import com.ensody.reactivestate.android.reactiveState
 import com.ensody.reactivestate.get
 import de.rki.covpass.app.R
+import de.rki.covpass.app.commonapp.BaseFragment
+import de.rki.covpass.app.commonapp.dialog.DialogModel
+import de.rki.covpass.app.commonapp.dialog.showDialog
 import de.rki.covpass.app.databinding.DetailBinding
 import de.rki.covpass.app.dependencies.covpassDeps
 import de.rki.covpass.app.detail.adapter.DetailAdapter
 import de.rki.covpass.app.detail.adapter.DetailItem
-import de.rki.covpass.commonapp.BaseFragment
-import de.rki.covpass.commonapp.dialog.DialogModel
-import de.rki.covpass.commonapp.dialog.showDialog
 import de.rki.covpass.sdk.annotationslib.Abort
 import de.rki.covpass.sdk.annotationslib.Abortable
 import de.rki.covpass.sdk.cert.models.*

@@ -6,8 +6,8 @@
 package de.rki.covpass.app.onboarding
 
 import de.rki.covpass.app.R
-import de.rki.covpass.commonapp.onboarding.BaseOnboardingConsentFragment
-import de.rki.covpass.commonapp.onboarding.BaseOnboardingInfoFragment
+import de.rki.covpass.app.commonapp.onboarding.BaseOnboardingConsentFragment
+import de.rki.covpass.app.commonapp.onboarding.BaseOnboardingInfoFragment
 
 /**
  * Common base fragment which sets the [buttonTextRes]

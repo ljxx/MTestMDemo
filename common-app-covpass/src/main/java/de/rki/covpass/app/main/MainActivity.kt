@@ -6,10 +6,10 @@
 package de.rki.covpass.app.main
 
 import android.os.Bundle
+import de.rki.covpass.app.commonapp.BaseActivity
+import de.rki.covpass.app.commonapp.dependencies.commonDeps
+import de.rki.covpass.app.commonapp.storage.OnboardingRepository.Companion.CURRENT_DATA_PRIVACY_VERSION
 import de.rki.covpass.app.onboarding.WelcomeFragmentNav
-import de.rki.covpass.commonapp.BaseActivity
-import de.rki.covpass.commonapp.dependencies.commonDeps
-import de.rki.covpass.commonapp.storage.OnboardingRepository.Companion.CURRENT_DATA_PRIVACY_VERSION
 
 /**
  * The only Activity in the app, hosts all fragments.

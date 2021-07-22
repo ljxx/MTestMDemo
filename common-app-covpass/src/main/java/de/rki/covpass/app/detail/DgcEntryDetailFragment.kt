@@ -19,14 +19,14 @@ import com.ensody.reactivestate.android.autoRun
 import com.ensody.reactivestate.android.reactiveState
 import com.ensody.reactivestate.get
 import de.rki.covpass.app.R
+import de.rki.covpass.app.commonapp.BaseFragment
+import de.rki.covpass.app.commonapp.dialog.DialogAction
+import de.rki.covpass.app.commonapp.dialog.DialogListener
+import de.rki.covpass.app.commonapp.dialog.DialogModel
+import de.rki.covpass.app.commonapp.dialog.showDialog
+import de.rki.covpass.app.commonapp.utils.stripUnderlines
 import de.rki.covpass.app.databinding.DgcEntryDetailBinding
 import de.rki.covpass.app.dependencies.covpassDeps
-import de.rki.covpass.commonapp.BaseFragment
-import de.rki.covpass.commonapp.dialog.DialogAction
-import de.rki.covpass.commonapp.dialog.DialogListener
-import de.rki.covpass.commonapp.dialog.DialogModel
-import de.rki.covpass.commonapp.dialog.showDialog
-import de.rki.covpass.commonapp.utils.stripUnderlines
 import de.rki.covpass.sdk.cert.models.*
 import de.rki.covpass.sdk.navigation.findNavigator
 import de.rki.covpass.sdk.utilslib.attachToolbar
@@ -43,7 +43,8 @@ internal interface DgcEntryDetailCallback {
 /**
  * Base fragment for displaying the details of a [Vaccination], [Test] or [Recovery].
  */
-internal abstract class DgcEntryDetailFragment : BaseFragment(), DgcEntryDetailEvents, DialogListener {
+internal abstract class DgcEntryDetailFragment : BaseFragment(), DgcEntryDetailEvents,
+    DialogListener {
 
     protected abstract val certId: String
 
