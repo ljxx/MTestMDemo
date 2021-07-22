@@ -16,15 +16,13 @@ import com.ensody.reactivestate.get
 import com.ensody.reactivestate.validUntil
 import com.google.android.material.tabs.TabLayoutMediator
 import de.rki.covpass.app.R
-import de.rki.covpass.app.add.AddCovCertificateFragmentNav
 import de.rki.covpass.app.commonapp.BaseFragment
 import de.rki.covpass.app.commonapp.dialog.DialogModel
 import de.rki.covpass.app.commonapp.dialog.showDialog
 import de.rki.covpass.app.databinding.CovpassMainBinding
 import de.rki.covpass.app.dependencies.covpassDeps
 import de.rki.covpass.app.detail.DetailCallback
-import de.rki.covpass.app.information.CovPassInformationFragmentNav
-import de.rki.covpass.app.validitycheck.ValidityCheckFragmentNav
+import de.rki.covpass.app.scanner.CovPassQRScannerFragmentNav
 import de.rki.covpass.sdk.cert.models.GroupedCertificates
 import de.rki.covpass.sdk.cert.models.GroupedCertificatesList
 import de.rki.covpass.sdk.cert.models.GroupedCertificatesId
@@ -56,8 +54,6 @@ internal class MainFragment : BaseFragment(), DetailCallback {
 
     private fun setupViews() {
         binding.mainAddButton.setOnClickListener { showAddCovCertificatePopup() }
-        binding.mainValidityCheckTextview.setOnClickListener { findNavigator().push(ValidityCheckFragmentNav()) }
-        binding.mainSettingsImagebutton.setOnClickListener { findNavigator().push(CovPassInformationFragmentNav()) }
         fragmentStateAdapter = CertificateFragmentStateAdapter(this)
         fragmentStateAdapter.attachTo(binding.mainViewPager)
         TabLayoutMediator(binding.mainTabLayout, binding.mainViewPager) { _, _ ->
@@ -105,6 +101,7 @@ internal class MainFragment : BaseFragment(), DetailCallback {
     }
 
     private fun showAddCovCertificatePopup() {
-        findNavigator().push(AddCovCertificateFragmentNav())
+        findNavigator().pop()
+        findNavigator().push(CovPassQRScannerFragmentNav())
     }
 }
